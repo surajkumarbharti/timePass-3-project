@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+        #box{
+            height: 400px;
+            width: 500px;
+            background-color: aquamarine;
+            text-align: center;
+            border: 2px solid yellowgreen;
+            color: black;
+        }
+        p{
+            color: brown;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        #hide{
+            color: darkgreen;
+            
+            font-weight: bold;
+            height: 30px;
+            width: 50px;
+
+        }
+        #show{
+            color: rgb(236, 75, 11);
+           
+            font-weight: bold;
+            height: 30px;
+            width: 50px;
+           
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "box">
+    <h1>QuizApp</h1>
+    <h3>Q1. what is 2 + 2</h3>
+    <p> 4 </p>
+    <h3>Q2. what is 2 - 2 </h3>
+    <p> 0</p>
+    <h3>Q3. where is mumbai </h3>
+    <p>india</p>
+    <button id = "hide">Hide</button>
+    <button id = "show">Show</button>
+    </div>
+    
+     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    
+    <script>
+        
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            })
+            $("#show").click(function(){
+                $("p").show();
+            })
+        })
+    </script>
+</body>
+</html>
