@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calander Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,60%27');
+    body
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        border-style: "" ;
+        font-family: 'Poppins', sans-serif ;
+    }
+    .calender
+    {
+        width: 300px;
+        height: auto;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    
+    .calender .date 
+    {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25px,1fr)) ;
+        grid-gap: 10px;
+        box-sizing: border-box;
+    }
+    .calender .date div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        color: #262626;
+    }
+    .calender .date div .day
+    {
+        font-weight: 700;
+    }
+    .calender .date div .day :first-child,
+    .calender .date div .number  :nth-child(7n + 1)
+    {
+        color: #ff685d;
+        font-weight: 700;
+    }
+    .calender .date div .number .active
+    {
+        background: #009688;
+        color: #fff;
+    }
+
+
+    
+    </style>
+   
+</head>
+<body>
+    <div class = "calander">
+        <div class = "image">
+            <h2>15, Thursday</h2>
+            <h3>November | 2018</h3>
+        </div>
+        <div class = "date">
+            <div class = "day">S</div>
+            <div class = "day">M</div>
+            <div class = "day">T</div>
+            <div class = "day">W</div>
+            <div class = "day">T</div>
+            <div class = "day">F</div>
+            <div class = "day">S</div>
+            <div class = "number"></div>
+            <div class = "number"></div>
+            <div class = "number"></div>
+            <div class = "number"></div>
+            <div class = "number">1</div>
+            <div class = "number">2</div>
+            <div class = "number">3</div>
+            <div class = "number">4</div>
+            <div class = "number">5</div>
+            <div class = "number">6</div>
+            <div class = "number">7</div>
+            <div class = "number">8</div>
+            <div class = "number">9</div>
+            <div class = "number">10</div>
+            <div class = "number">11</div>
+            <div class = "number">12</div>
+            <div class = "number">13</div>
+            <div class = "number">14</div>
+            <div class = "number active">15</div>
+            <div class = "number">16</div>
+            <div class = "number">17</div>
+            <div class = "number">18</div>
+            <div class = "number">19</div>
+            <div class = "number">20</div>
+            <div class = "number">21</div>
+            <div class = "number">22</div>
+            <div class = "number">23</div>
+            <div class = "number">24</div>
+            <div class = "number">25</div>
+            <div class = "number">26</div>
+            <div class = "number">27</div>
+            <div class = "number">28</div>
+            <div class = "number">29</div>
+            <div class = "number">30</div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
